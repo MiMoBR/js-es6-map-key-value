@@ -1,0 +1,24 @@
+const a = {};
+
+const b = {
+    num:1
+}
+
+const map = new Map();
+
+----Interate Map----
+map.set(a,'a').set(b,'b');
+
+Map(2) {{…} => "a", {…} => "b"}
+[[Entries]]0: 
+  {Object => "a"}key: {}value: "a"1: 
+  {Object => "b"}key: {num: 1}value: "b"size: (...)__proto__: Map
+
+
+-----loop Map------
+for(let [key,value] of map.entries()){
+    console.log(key,value);
+}
+
+ Object "a"
+ Object "b"
